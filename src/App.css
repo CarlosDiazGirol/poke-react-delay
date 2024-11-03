@@ -19,23 +19,25 @@
 }
 
 .spinner {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
+  width: 35px;
+  height: 35px;
   border: 5px solid white;
-  border-left-color: red;
-  animation: spin 1s linear infinite;
+  border-radius: 50%;
+  border-right-color: red;
+  animation: rotate 1s linear infinite;
   margin: 20px auto;
 }
 
-@keyframes spin {
-  0% {
+@keyframes rotate {
+  from {
     transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(360deg);
+
   }
 }
+
 
 
 

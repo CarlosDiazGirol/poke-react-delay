@@ -78,7 +78,8 @@ function App() {
       {resultPokemon && (
         <>
           <h1>{resultPokemon.name}</h1>
-          <img src={resultPokemon.sprites.front_default} alt={resultPokemon.name} />
+          {/* ?. (optional chaining): Este operador verifica si sprites existe antes de intentar acceder a front_default. Si sprites no existe, en lugar de causar un error, el resultado de src será undefined y no se intentará acceder a front_default. */}
+          <img src={resultPokemon.sprites?.front_default} alt={resultPokemon.name} />
         </>
       )}
     </>
